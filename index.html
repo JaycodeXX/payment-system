@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Payment System Form Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Payment Form</h1>
+        <form action="" method="POST">
+            <h3>Account</h3>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" name="name" placeholder="Full Name" required class="name">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="name" placeholder="Name on card" required class="name">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="email" name="email" placeholder="Email Address" required class="name">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="address" name="address" placeholder="Address" required class="name">
+                    <i class="fa-solid fa-map-marker"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="address" name="address" placeholder="City / Provinces" required class="name">
+                    <i class="fa-solid fa-institution"></i>
+                </div>
+            </div>
+<!-- ---------------------- Date of Birth ------------------- -->
+            <div class="input_group">
+                <div class="input_box">
+                    <h3>Date of Birth</h3>
+                    <input type="text" name="Dob" placeholder="DD" required class="dob">
+                    <input type="text" name="month" placeholder="MM" required class="dob">
+                    <input type="text" name="year" placeholder="YYYY" required class="dob">
+                </div>
+                <div class="input_box">
+                    <input type="radio" name="gender" id="radio_1" checked>
+                    <label for="radio">Male</label>
+                    <input type="radio" name="gender" id="radio_2">
+                    <label for="radio">Female</label>
+                </div>
+            </div>
+<!-- ------------------- Payment Details -------------------- -->
+<div class="input_group">
+    <div class="input_box">
+        <h3>Payment Details</h3>
+        <input type="radio" name="pay" class="radio" id="radio_3" checked>
+        <label for="radio_3"><span>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            Credit Card
+        </span></label>
+        <input type="radio" name="pay" class="radio" id="radio_4" checked>
+        <label for="radio_4"><span>
+            <i class="fa-brands fa-cc-paypal"></i>
+            PayPal
+        </span></label>
+    </div>
+</div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="tel"placeholder="Card Number 1234****12234" required class="name">
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="tel"placeholder="Card CVC ***" required class="name">
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="number"placeholder="Expiry Month" required class="name">
+            <i class="fa-solid fa-calendar-days"></i>
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="number"placeholder="Expiry Year" required class="name">
+            <i class="fa-solid fa-calendar-plus"></i>
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+            <input type="number"placeholder="Total Amount" required class="name">
+            <i class="fa-solid fa-money-check-dollar"></i>
+        </div>
+    </div>
+    <div class="input_group">
+        <div class="input_box">
+           <button type="submit">Procced with Payment</button>
+        </div>
+    </div>
+ </form>
+    </div>
+</body>
+</html>

@@ -52,9 +52,10 @@
                     <input type="text" name="year" placeholder="YYYY" required class="dob">
                 </div>
                 <div class="input_box">
-                    <input type="radio" name="gender" id="radio_1" checked>
+                    <h3>Gender</h3>
+                    <input type="radio" name="gender" class="radio" checked>
                     <label for="radio">Male</label>
-                    <input type="radio" name="gender" id="radio_2">
+                    <input type="radio" name="gender" class="radio">
                     <label for="radio">Female</label>
                 </div>
             </div>
@@ -62,16 +63,17 @@
 <div class="input_group">
     <div class="input_box">
         <h3>Payment Details</h3>
-        <input type="radio" name="pay" class="radio" id="radio_3" checked>
-        <label for="radio_3"><span>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            Credit Card
-        </span></label>
-        <input type="radio" name="pay" class="radio" id="radio_4" checked>
-        <label for="radio_4"><span>
-            <i class="fa-brands fa-cc-paypal"></i>
-            PayPal
-        </span></label>
+        <input type="radio" name="pay" class="radio" checked>
+        <label for="radio_3">
+            <span>
+            <i class="fa-brands fa-cc-mastercard"></i>Credit Card
+           </span>
+       </label>
+        <input type="radio" name="pay" class="radio" checked>
+        <label for="radio_4">
+            <span><i class="fa-brands fa-cc-paypal"></i>PayPal
+            </span>
+        </label>
     </div>
 </div>
     <div class="input_group">
@@ -109,6 +111,6 @@
         </div>
     </div>
  </form>
-    </div>
+</div>
 </body>
 </html>

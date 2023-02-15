@@ -2,8 +2,137 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     transition: all 1s ease-in-out;
 }
+:root{
+    --pri-text-color: #21cdd3;
+    
+}
 body{
-    background: #d7f7ff;
+    background: #c0d4d9;
+}
+.wrapper{
+    background: #fff;
+    width: 500px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+h1{
+    background: #fcfcfcfc;
+    color: var(--pri-text-color);
+    font-size: 1.7rem;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    border-top: 1px solid #21cdd3;
+    border-bottom: 1px solid #21cdd3;
+}
+.wrapper h3{
+    padding-bottom: 5px;
+   color: var(--pri-text-color);
+}
+.input_group{
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.input_box{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+.input_box:last-child{
+    margin-right: 0;
+}
+.input_box .name{
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background: #fcfcfcfc;
+    border: 1px solid #0003;
+    outline: none;
+    letter-spacing: 1.2px;
+    color: #333;
+}
+.input_box .name:focus, .dob:focus{
+    -webkit-box-shadow: 0 0 2px 1px #21cdd3;
+    -moz-box-shadow: 0 0 2px 1px #21cdd3;
+    box-shadow: 0 0 2px 1px #21cdd3;
+    border: 1px solid #21cdd3;
+}
+.input_box i{
+   width: 48px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   top: 0;
+   color: #333;
+   background: #f1f1f1f1;
+   border-radius: 2px 0 0 2px;
+   font-size: 20px;
+   border: 1px solid #00000003;
+   border-right: none;
+}
+.input_box i:hover{
+    background: var(--pri-text-color);
+    color: #fff;
+    border: 1px solid #21cdd3;
+    border: none;
+    transition: 1s;
+}
+.dob{
+    width: 30%;
+    padding: 14px;
+    text-align: center;
+    background: #fcfcfcfc;
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    border-radius: 3px;
+}
+.input_box label{
+    width: 50%;
+    padding: 13px;
+    background: #fcfcfcfc;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    border: 1px solid #c0bfbf;
+}
+.input_box label:first-of-type{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: none;
+}
+.input_box label:last-of-type{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.radio:checked+label{
+    background: #21cdd3;
+    color: #fff;
+    transition: 0.5s;
+}
+.input_box button{
+    width: 100%;
+    background: var(--pri-text-color);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-right: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+.input_box button:hover{
+    background: #05b1a3;
+    cursor: pointer;
 }
